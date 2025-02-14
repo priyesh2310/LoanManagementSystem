@@ -2,9 +2,9 @@ import com.loantype.Loan;
 import java.sql.*;
 
 public class DatabaseHandler {
-    private static final String URL = "jdbc:mysql://localhost:3306/LoanDB";
+    private static final String URL = "jdbc:mysql://localhost:3306/Loandb";
     private static final String USER = "root";
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "Qwerty@123";
 
     public static void saveLoanToDB(Loan loan, String loanType) {
         String query = "INSERT INTO loans (borrowerName, loanType, loanAmount, interestRate, loanTerm, creditScore, salary, age) VALUES (?, ?, ?, ?, ?,?, ?, ?)";
